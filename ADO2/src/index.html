@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Castor Reparos e Manutenções Residenciais - Marido de Aluguel, Reformas e Obras</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter & Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        castor: {
+                            amber: '#F59E0B',
+                            gold: '#D97706',
+                            yellow: '#FFC107',
+                            brown: '#78350F',
+                            darkbrown: '#451A03',
+                            slate: '#0F172A',
+                            slatecard: '#1E293B',
+                            light: '#F8FAFC'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .beaver-logo-bg {
+            background: radial-gradient(circle, rgba(245,158,11,0.2) 0%, rgba(255,255,255,0) 70%);
+        }
+        .hero-pattern {
+            background-color: #0F172A;
+            background-image: radial-gradient(#F59E0B 0.75px, #0F172A 0.75px);
+            background-size: 24px 24px;
+        }
+        /* Style for ScrollSpy Active Links */
+        .nav-link.active {
+            color: #F59E0B;
+            font-weight: 700;
+            background-color: #FEF3C7;
+        }
+    </style>
+</head>
+<body class="bg-castor-light text-slate-800 font-sans antialiased selection:bg-castor-amber selection:text-white relative">
+
+<!-- TOP BAR DE INFORMAÇÕES RÁPIDAS -->
+<div class="bg-castor-slate text-slate-300 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+        <div class="flex items-center space-x-6">
+            <span><i class="fa-regular fa-clock text-castor-amber mr-1.5" aria-hidden="true"></i> Seg - Sáb: 07:00 às 21:00</span>
+            <span class="hidden md:inline"><i class="fa-solid fa-location-dot text-castor-amber mr-1.5" aria-hidden="true"></i> Região Metropolitana </span>
+        </div>
+        <div class="flex items-center space-x-4">
+            <a href="tel:946473125" class="hover:text-castor-amber transition focus:outline-none focus:ring-2 focus:ring-castor-amber rounded px-1"><i class="fa-solid fa-phone text-castor-amber mr-1" aria-hidden="true"></i> (11) 946473125</a>
+            <span class="text-slate-600">|</span>
+            <a href="#contato" class="hover:text-castor-amber transition focus:outline-none focus:ring-2 focus:ring-castor-amber rounded px-1"><i class="fa-solid fa-envelope text-castor-amber mr-1" aria-hidden="true"></i>
+                edsonmvmg@gmail.com</a>
+        </div>
+    </div>
+</div>
+
+<!-- HEADER / BARRA DE NAVEGAÇÃO -->
+<header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-md transition-all duration-300" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+
+            <!-- BRAND LOGO -->
+            <a href="#inicio" class="flex items-center space-x-3 group focus:outline-none focus:ring-2 focus:ring-castor-amber rounded-lg p-1">
+                <div class="relative w-12 h-12 flex items-center justify-center bg-amber-100 rounded-full border-2 border-castor-amber p-1 overflow-hidden group-hover:scale-105 transition-transform">
+                    <!-- SVG Mascot Castor -->
+                    <svg viewBox="0 0 300 320" class="w-full h-full object-contain" aria-label="Logotipo Castor Reparos">
+                        <path d="M70,130 C70,60 230,60 230,130 C245,130 250,145 235,148 C220,150 80,150 65,148 C50,145 55,130 70,130 Z" fill="#FFC107" stroke="#333" stroke-width="6" />
+                        <path d="M110,80 L190,80 L185,130 L115,130 Z" fill="#E6A100" />
+                        <rect x="70" y="130" width="160" height="15" rx="5" fill="#FFD54F" stroke="#333" stroke-width="4"/>
+                        <circle cx="85" cy="140" r="22" fill="#78350F" stroke="#333" stroke-width="6"/>
+                        <circle cx="85" cy="140" r="10" fill="#451A03"/>
+                        <circle cx="215" cy="140" r="22" fill="#78350F" stroke="#333" stroke-width="6"/>
+                        <circle cx="215" cy="140" r="10" fill="#451A03"/>
+                        <path d="M75,140 C60,200 70,250 150,250 C230,250 240,200 225,140 Z" fill="#A17855" stroke="#333" stroke-width="6"/>
+                        <ellipse cx="110" cy="205" rx="20" ry="14" fill="#E8B4A2" opacity="0.7"/>
+                        <ellipse cx="190" cy="205" rx="20" ry="14" fill="#E8B4A2" opacity="0.7"/>
+                        <ellipse cx="150" cy="200" rx="35" ry="25" fill="#F5E0C8" stroke="#333" stroke-width="4"/>
+                        <circle cx="120" cy="175" r="12" fill="#222"/>
+                        <circle cx="117" cy="172" r="4" fill="#FFF"/>
+                        <circle cx="180" cy="175" r="12" fill="#222"/>
+                        <circle cx="177" cy="172" r="4" fill="#FFF"/>
+                        <path d="M140,188 C140,180 160,180 160,188 C160,196 140,196 140,188 Z" fill="#222"/>
+                        <path d="M150,195 L150,208 M140,205 Q150,212 160,205" stroke="#333" stroke-width="4" fill="none" stroke-linecap="round"/>
+                        <rect x="144" y="208" width="12" height="12" rx="2" fill="#FFF" stroke="#333" stroke-width="3"/>
+                        <rect x="105" y="235" width="90" height="85" rx="6" fill="#FFF" stroke="#333" stroke-width="5"/>
+                        <rect x="130" y="225" width="40" height="15" rx="3" fill="#9E9E9E" stroke="#333" stroke-width="3"/>
+                    </svg>
+                </div>
+                <div class="flex flex-col">
+                        <span class="font-heading font-extrabold text-xl tracking-tight text-castor-slate uppercase flex items-center gap-1">
+                            Castor <span class="text-castor-amber font-black">Reparos</span>
+                        </span>
+                    <span class="text-xs text-slate-500 font-medium tracking-wide">Manutenções & Reformas</span>
+                </div>
+            </a>
+
+            <!-- NAV LINKS (DESKTOP / SCROLLSPY) -->
+            <nav class="hidden lg:flex items-center space-x-1 font-medium text-slate-700">
+                <a href="#servicos" class="nav-link px-3 py-2 rounded-lg hover:text-castor-amber hover:bg-amber-50 transition">Serviços</a>
+                <a href="#orcamento" class="nav-link px-3 py-2 rounded-lg hover:text-castor-amber hover:bg-amber-50 transition font-bold text-castor-gold">Faça o Orçamento</a>
+                <a href="#contato" class="nav-link px-3 py-2 rounded-lg hover:text-castor-amber hover:bg-amber-50 transition">Contato</a>
+            </nav>
+
+            <!-- BOTÃO CTA DE AÇÃO RÁPIDA -->
+            <div class="hidden lg:flex items-center space-x-3">
+                <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20um%20orçamento%20rápido." target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-4 py-2.5 rounded-xl shadow-md hover:shadow-lg transition flex items-center gap-2 text-sm">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
+                </a>
+            </div>
+
+            <!-- MENU MOBILE HAMBURGER -->
+            <button id="mobile-menu-btn" class="lg:hidden text-slate-700 hover:text-castor-amber p-2 focus:outline-none focus:ring-2 focus:ring-castor-amber rounded-lg" aria-label="Abrir menu de navegação">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- MENU MOBILE DROPDOWN -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-2">
+        <a href="#inicio" class="block py-2.5 px-3 rounded-lg text-slate-700 hover:bg-amber-50 font-medium">Página Inicial</a>
+        <a href="#quem-somos" class="block py-2.5 px-3 rounded-lg text-slate-700 hover:bg-amber-50 font-medium">Quem Somos</a>
+        <a href="#servicos" class="block py-2.5 px-3 rounded-lg text-slate-700 hover:bg-amber-50 font-medium">Serviços</a>
+        <a href="#portfolio" class="block py-2.5 px-3 rounded-lg text-slate-700 hover:bg-amber-50 font-medium">Portfólio</a>
+        <a href="#depoimentos" class="block py-2.5 px-3 rounded-lg text-slate-700 hover:bg-amber-50 font-medium">Depoimentos</a>
+        <a href="#faq" class="block py-2.5 px-3 rounded-lg text-slate-700 hover:bg-amber-50 font-medium">Perguntas Frequentes</a>
+        <a href="#orcamento" class="block py-2.5 px-3 rounded-lg bg-amber-100 text-castor-darkbrown font-bold"><i class="fa-solid fa-calculator mr-2 text-castor-amber"></i>Simular Orçamento</a>
+        <a href="#contato" class="block py-2.5 px-3 rounded-lg text-slate-700 hover:bg-amber-50 font-medium">Contato e Horários</a>
+    </div>
+</header>
+
+<!-- HERO SECTION / INÍCIO -->
+<section id="inicio" class="relative hero-pattern text-white py-16 lg:py-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/20 border border-amber-500/30 text-castor-amber font-semibold text-xs sm:text-sm">
+                    <i class="fa-solid fa-shield-halved"></i> Soluções Garantidas para sua Casa
+                </div>
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-heading font-black tracking-tight leading-tight">
+                    Seu <span class="text-castor-amber underline decoration-castor-yellow/40">Marido de Aluguel</span> & Especialista em Reformas
+                </h1>
+                <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                    Do pequeno conserto hidráulico à reforma completa. A **Castor Reparos** resolve com agilidade, limpeza impecável e transparência!
+                </p>
+
+                <!-- BADGES DE DIFERENCIAIS -->
+                <div class="pt-2 grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs sm:text-sm">
+                    <div class="flex items-center justify-center lg:justify-start gap-2 text-slate-200">
+                        <i class="fa-solid fa-check-circle text-castor-amber" aria-hidden="true"></i> Atendimento Rápido
+                    </div>
+                    <div class="flex items-center justify-center lg:justify-start gap-2 text-slate-200">
+                        <i class="fa-solid fa-check-circle text-castor-amber" aria-hidden="true"></i> Garantia de Serviço
+                    </div>
+                    <div class="flex items-center justify-center lg:justify-start gap-2 text-slate-200">
+                        <i class="fa-solid fa-check-circle text-castor-amber" aria-hidden="true"></i> Orçamento Transparente
+                    </div>
+                </div>
+
+                <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                    <a href="#orcamento" class="w-full sm:w-auto bg-castor-amber hover:bg-castor-gold text-slate-900 font-extrabold px-8 py-4 rounded-xl shadow-lg hover:shadow-amber-500/20 transition text-center flex items-center justify-center gap-3 group">
+                        <span>Simular Orçamento Interativo</span>
+                        <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20expresso." target="_blank" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-7 py-4 rounded-xl shadow-lg transition text-center flex items-center justify-center gap-3">
+                        <i class="fa-brands fa-whatsapp text-xl" aria-hidden="true"></i> WhatsApp Expresso
+                    </a>
+                </div>
+            </div>
+
+            <!-- ILUSTRAÇÃO / MASCOTE -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative w-72 sm:w-80 lg:w-96 h-72 sm:h-80 lg:h-96 beaver-logo-bg rounded-full flex items-center justify-center p-6 border-4 border-amber-500/20 shadow-2xl">
+                    <svg viewBox="0 0 300 320" class="w-full h-full drop-shadow-2xl" aria-label="Mascote Castor Reparos">
+                        <path d="M70,130 C70,60 230,60 230,130 C245,130 250,145 235,148 C220,150 80,150 65,148 C50,145 55,130 70,130 Z" fill="#FFC107" stroke="#222" stroke-width="5" />
+                        <path d="M110,80 L190,80 L185,130 L115,130 Z" fill="#E6A100" />
+                        <rect x="70" y="130" width="160" height="15" rx="5" fill="#FFD54F" stroke="#222" stroke-width="4"/>
+                        <circle cx="85" cy="140" r="22" fill="#78350F" stroke="#222" stroke-width="5"/>
+                        <circle cx="85" cy="140" r="10" fill="#451A03"/>
+                        <circle cx="215" cy="140" r="22" fill="#78350F" stroke="#222" stroke-width="5"/>
+                        <circle cx="215" cy="140" r="10" fill="#451A03"/>
+                        <path d="M75,140 C60,200 70,250 150,250 C230,250 240,200 225,140 Z" fill="#8D5B4C" stroke="#222" stroke-width="5"/>
+                        <ellipse cx="110" cy="205" rx="20" ry="14" fill="#E8B4A2" opacity="0.6"/>
+                        <ellipse cx="190" cy="205" rx="20" ry="14" fill="#E8B4A2" opacity="0.6"/>
+                        <ellipse cx="150" cy="200" rx="35" ry="25" fill="#F5E0C8" stroke="#222" stroke-width="4"/>
+                        <circle cx="120" cy="175" r="12" fill="#222"/>
+                        <circle cx="117" cy="172" r="4" fill="#FFF"/>
+                        <circle cx="180" cy="175" r="12" fill="#222"/>
+                        <circle cx="177" cy="172" r="4" fill="#FFF"/>
+                        <path d="M140,188 C140,180 160,180 160,188 C160,196 140,196 140,188 Z" fill="#222"/>
+                        <path d="M150,195 L150,208 M140,205 Q150,212 160,205" stroke="#222" stroke-width="4" fill="none" stroke-linecap="round"/>
+                        <rect x="144" y="208" width="12" height="12" rx="2" fill="#FFF" stroke="#222" stroke-width="3"/>
+                        <rect x="105" y="235" width="90" height="85" rx="6" fill="#FFF" stroke="#222" stroke-width="4"/>
+                        <rect x="130" y="225" width="40" height="15" rx="3" fill="#9E9E9E" stroke="#222" stroke-width="3"/>
+                        <line x1="120" y1="255" x2="180" y2="255" stroke="#424242" stroke-width="4" stroke-linecap="round"/>
+                        <line x1="120" y1="270" x2="170" y2="270" stroke="#424242" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+
+                    <div class="absolute -bottom-2 bg-white text-slate-900 font-extrabold text-xs sm:text-sm px-4 py-2 rounded-full shadow-lg border-2 border-castor-amber flex items-center gap-2">
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span> Atendendo em Toda a Região
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- QUEM SOMOS -->
+<section id="quem-somos" class="py-16 lg:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+            <div class="relative">
+                <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-slate-100">
+                    <img src="https://tse1.explicit.bing.net/th/id/OIP.OuoYZGRMFsTdQmjDAAJkagHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Profissional Castor trabalhando com ferramentas" class="w-full h-[400px] object-cover" onerror="this.src='https://placehold.co/800x600/78350F/FFF?text=Castor+Reparos'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 text-white max-w-sm">
+                        <p class="font-bold text-lg">Pontualidade & Limpeza Garantidas</p>
+                        <p class="text-xs text-slate-200">Respeitamos a sua casa do início ao fim do serviço.</p>
+                    </div>
+                </div>
+              
+            </div>
+
+            <div class="space-y-6">
+                <div class="inline-block px-3 py-1 bg-amber-100 text-castor-darkbrown font-bold text-xs rounded-md uppercase tracking-wider">
+                    Quem Somos
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-castor-slate tracking-tight">
+                    Sua casa em boas mãos com a <span class="text-castor-gold">Castor Reparos</span>
+                </h2>
+                <p class="text-slate-600 leading-relaxed">
+                    Somos a Castor Reparos, prestamos serviços de marido de aluguel, reparos, manutenções, elétrica e hidráulica. Ligue (11) 946473125 . Prezamos pelo bom atendimento e pela satisfação do nosso cliente. Entre em contato agora e contrate a Castor Reparo                </p>
+                <p class="text-slate-600 leading-relaxed">
+                    Todas as residências são projetadas de modo que possuam uma infra-estrutura mínima para possibilitar as instalações elétricas, hidráulicas, de gás, rede de dados e tantos outros gêneros. Como nada é para sempre, as manutenções preventivas ou corretivas se fazem necessárias.
+
+                    É preciso corrigir problemas com vazamentos de água e, ocasionalmente, vazamentos de gás. Também na rede elétrica, além das adaptações e novas instalações, as vezes é necessário realizar a troca de cabos (os cabos mais antigos eram todos rígidos). A pintura é outro item de reforma periódica e indispensável. Também as trocas de pisos e azulejos e a criação de ambientes no interior do imóvel, retirando ou adicionando paredes.
+
+                    Então, você já sabe! Na hora de fazer a manutenção ou a reforma do teu imóvel, conte com a Castor Reparos: Serviços de reformas, portas e janelas, marido de aluguel, instalações elétricas e hidráulicas, reparos e instalações diversas.
+
+                    Entre em contato agora mesmo e nos contrate!
+                </p>
+
+
+                <p class="text-slate-600 leading-relaxed">    Localização: R. José Paulino, 472 - Bom Retiro, São Paulo - SP, 01120-000
+
+                </p>
+
+                <div class="grid grid-cols-2 gap-4 pt-2">
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                        <i class="fa-solid fa-broom text-castor-amber text-2xl mb-2" aria-hidden="true"></i>
+                        <h4 class="font-bold text-slate-800 text-sm">Obra Sem Bagunça</h4>
+                        <p class="text-xs text-slate-500">Deixamos o ambiente perfeitamente limpo ao concluir.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                        <i class="fa-solid fa-file-contract text-castor-amber text-2xl mb-2" aria-hidden="true"></i>
+                        <h4 class="font-bold text-slate-800 text-sm">Orçamento Claro</h4>
+                        <p class="text-xs text-slate-500">Sem taxas ocultas ou surpresas no valor final.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- SERVIÇOS DETALHADOS -->
+<section id="servicos" class="py-16 lg:py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-3xl mx-auto space-y-4">
+            <div class="inline-block px-3 py-1 bg-amber-100 text-castor-darkbrown font-bold text-xs rounded-md uppercase tracking-wider">
+                Especialidades
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-castor-slate">Nossos Serviços Residenciais</h2>
+            <p class="text-slate-600">Seja uma pequena instalação ou uma grande reforma, possuímos técnicos especializados para cada tipo de necessidade.</p>
+        </div>
+
+        <!-- FILTROS DE CATEGORIA DE SERVIÇOS -->
+        <div class="flex flex-wrap justify-center gap-2 mt-8 mb-12">
+            <button onclick="filterServices('all')" class="service-tab active font-semibold text-sm px-5 py-2.5 rounded-full transition bg-castor-amber text-slate-900 shadow-sm" data-category="all">
+                Todos os Serviços
+            </button>
+            <button onclick="filterServices('gesso')" class="service-tab font-semibold text-sm px-5 py-2.5 rounded-full transition bg-white text-slate-600 hover:bg-amber-100" data-category="gesso">
+                <i class="fa-solid fa-border-all mr-1 text-castor-gold" aria-hidden="true"></i> Gesso e Drywall
+            </button>
+            <button onclick="filterServices('instalacoes')" class="service-tab font-semibold text-sm px-5 py-2.5 rounded-full transition bg-white text-slate-600 hover:bg-amber-100" data-category="instalacoes">
+                <i class="fa-solid fa-screwdriver-wrench mr-1 text-castor-gold" aria-hidden="true"></i> Instalações
+            </button>
+            <button onclick="filterServices('eletrica')" class="service-tab font-semibold text-sm px-5 py-2.5 rounded-full transition bg-white text-slate-600 hover:bg-amber-100" data-category="eletrica">
+                <i class="fa-solid fa-bolt mr-1 text-castor-gold" aria-hidden="true"></i> Rede Elétrica
+            </button>
+            <button onclick="filterServices('hidraulica')" class="service-tab font-semibold text-sm px-5 py-2.5 rounded-full transition bg-white text-slate-600 hover:bg-amber-100" data-category="hidraulica">
+                <i class="fa-solid fa-faucet-drip mr-1 text-castor-gold" aria-hidden="true"></i> Rede Hidráulica
+            </button>
+            <button onclick="filterServices('reformas')" class="service-tab font-semibold text-sm px-5 py-2.5 rounded-full transition bg-white text-slate-600 hover:bg-amber-100" data-category="reformas">
+                <i class="fa-solid fa-paint-roller mr-1 text-castor-gold" aria-hidden="true"></i> Reformas e Obras
+            </button>
+        </div>
+
+        <!-- CARDS DOS SERVIÇOS -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="services-grid">
+
+            <!-- 1. GESSO E DRYWALL -->
+            <div class="service-card bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-xl transition-all duration-300" data-category="gesso">
+                <div class="w-14 h-14 bg-amber-100 text-castor-gold rounded-xl flex items-center justify-center text-2xl mb-4">
+                    <i class="fa-solid fa-border-all" aria-hidden="true"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-800 mb-2">Gesso e Drywall</h3>
+                <p class="text-slate-600 text-sm mb-4">Divisórias em drywall, forros acartonados, sancas decorativas e reparos em paredes trincadas ou com umidade.</p>
+                <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-100 pt-3 mb-4">
+                    <li><i class="fa-solid fa-check text-emerald-500 mr-2" aria-hidden="true"></i>Forros rebaixados e iluminação embutida</li>
+                    <li><i class="fa-solid fa-check text-emerald-500 mr-2" aria-hidden="true"></i>Divisórias térmicas e acústicas</li>
+                    <li><i class="fa-solid fa-check text-emerald-500 mr-2" aria-hidden="true"></i>Conserto de furos e placas danificadas</li>
+                </ul>
+                <a href="#orcamento" onclick="preselectServiceAndScroll('gesso_divisoria')" class="text-sm font-bold text-castor-gold hover:text-castor-amber flex items-center gap-1">
+                    Simular Valor <i class="fa-solid fa-chevron-right text-xs" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <!-- 2. INSTALAÇÕES -->
+            <div class="service-card bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-xl transition-all duration-300" data-category="instalacoes">
+                <div class="w-14 h-14 bg-amber-100 text-castor-gold rounded-xl flex items-center justify-center text-2xl mb-4">
+                    <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-800 mb-2">Instalações Gerais</h3>
+                <p class="text-slate-600 text-sm mb-4">Serviços práticos de Marido de Aluguel para deixar sua casa organizada, bonita e 100% funcional sem estresse.</p>
+                <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-100 pt-3 mb-4">
+                    <li><i class="fa-solid fa-check text-emerald-500 mr-2" aria-hidden="true"></i>Suportes de TV, quadros e cortinas</li>
+                    <li><i class="fa-solid fa-check text-emerald-500 mr-2" aria-hidden="true"></i>Montagem e montagem de móveis</li>
+                    <li><i class="fa-solid fa-check text-emerald-500 mr-2" aria-hidden="true"></i>Exhaustores, persianas e prateleiras</li>
+                </ul>
+                <a href="#orcamento" onclick="preselectServiceAndScroll('inst_tv')" class="text-sm font-bold text-castor-gold hover:text-castor-amber flex items-center gap-1">
+                    Simular Valor <i class="fa-solid fa-chevron-right text-xs" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <!-- 3. REDE ELÉTRICA -->
+            <div class="service-card bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-xl transition-all duration-300" data-category="eletrica">
+                <div class="w-14 h-14 bg-amber-100 text-castor-gold rounded-xl flex items-center justify-center text-2xl mb-4">
+                    <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-800 mb-2">Rede Elétrica</h3>
+                <p class="text-slate-600 text-sm mb-4">Manutenção elétrica com total segurança para prevenir curtos-circuitos e riscos ao seu patrimônio.</p>
+                <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-100 pt-3 mb-4">
+                    <li><i class="fa-solid fa-check text-emerald-500 mr-2" aria-hidden="true"></i>Troca de tomadas, interruptores e fiação</li>
+                    <li><i class="fa-solid fa-check text-emerald-500 mr-2" aria-hidden="true"></i>Instalação de chuveiros e lustres LED</li>
+                    <li><i class="fa-solid fa-check text-emerald-500 mr-2" aria-hidden="true"></i>Quadros de disjuntores e distribuição</li>
+                </ul>
+                <a href="#orcamento" onclick="preselectServiceAndScroll('elet_chuveiro')" class="text-sm font-bold text-castor-gold hover:text-castor-amber flex items-center gap-1">
+                    Simular Valor <i class="fa-solid fa-chevron-right text-xs" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <!-- 4. REDE HIDRÁULICA -->
+            <div class="service-card bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-xl transition-all duration-300" data-category="hidraulica">
+                <div class="w-14 h-14 bg-amber-100 text-castor-gold rounded-xl flex items-center justify-center text-2xl mb-4">
+                    <i class="fa-solid fa-faucet-drip" aria-hidden="true"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-800 mb-2">Rede Hidráulica</h3>
+                <p class="text-slate-600 text-sm mb-4">Reparos de vazamentos, troca de reparos de descarga, substituição de sifões, torneiras e desentupimentos simples.</p>
+                <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-100 pt-3 mb-4">
+                    <li><i class="fa-solid fa-check text-emerald-500 mr-2" aria-hidden="true"></i>Conserto de vazamentos e gotejamentos</li>
+                    <li><i class="fa-solid fa-check text-emerald-500 mr-2" aria-hidden="true"></i>Instalação de torneiras, filtros e louças</li>
+                    <li><i class="fa-solid fa-check text-emerald-500 mr-2" aria-hidden="true"></i>Manutenção de caixa acoplada e vedações</li>
+                </ul>
+                <a href="#orcamento" onclick="preselectServiceAndScroll('hidr_torneira')" class="text-sm font-bold text-castor-gold hover:text-castor-amber flex items-center gap-1">
+                    Simular Valor <i class="fa-solid fa-chevron-right text-xs" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <!-- 5. REFORMAS E OBRAS -->
+            <div class="service-card bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-xl transition-all duration-300" data-category="reformas">
+                <div class="w-14 h-14 bg-amber-100 text-castor-gold rounded-xl flex items-center justify-center text-2xl mb-4">
+                    <i class="fa-solid fa-paint-roller" aria-hidden="true"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-800 mb-2">Reformas e Obras</h3>
+                <p class="text-slate-600 text-sm mb-4">Execução completa de reformas para banheiros, cozinhas, pintura residencial e assentamento de pisos.</p>
+                <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-100 pt-3 mb-4">
+                    <li><i class="fa-solid fa-check text-emerald-500 mr-2" aria-hidden="true"></i>Pintura interna e externa completa</li>
+                    <li><i class="fa-solid fa-check text-emerald-500 mr-2" aria-hidden="true"></i>Pisos de porcelanato e revestimentos</li>
+                    <li><i class="fa-solid fa-check text-emerald-500 mr-2" aria-hidden="true"></i>Pequena alvenaria e acabamentos</li>
+                </ul>
+                <a href="#orcamento" onclick="preselectServiceAndScroll('ref_pintura')" class="text-sm font-bold text-castor-gold hover:text-castor-amber flex items-center gap-1">
+                    Simular Valor <i class="fa-solid fa-chevron-right text-xs" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <!-- CARD DE EMERGÊNCIA -->
+            <div class="bg-gradient-to-br from-castor-slate to-castor-slatecard rounded-2xl p-6 text-white flex flex-col justify-between shadow-md">
+                <div>
+                    <div class="w-12 h-12 bg-amber-500/20 text-castor-amber rounded-xl flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-kit-medical" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Precisa de Atendimento Urgente?</h3>
+                    <p class="text-slate-300 text-sm mb-4">Vazamento grave, curto-circuito ou cano estourado? Fale direto conosco pelo WhatsApp!</p>
+                </div>
+                <a href="https://wa.me/5511999999999?text=Preciso%20de%20um%20atendimento%20de%20emergência!" target="_blank" class="bg-castor-amber hover:bg-castor-gold text-slate-900 text-center font-bold py-3 px-4 rounded-xl transition text-sm">
+                    Chamar Socorro Rápido
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- FORMULÁRIO DE ORÇAMENTO INTERATIVO COM CÁLCULO E ETAPAS (HEURÍSTICAS #1, #3, #5, #6) -->
+<section id="orcamento" class="py-16 lg:py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-3xl mx-auto mb-10">
+            <div class="inline-block px-3 py-1 bg-amber-100 text-castor-darkbrown font-bold text-xs rounded-md uppercase tracking-wider">
+                Simulador Interativo
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-castor-slate mt-2">Calcule e Solicite seu Orçamento</h2>
+            <p class="text-slate-600">Selecione os serviços desejados em 3 etapas simples para ter uma estimativa instantânea.</p>
+        </div>
+
+        <div class="bg-gradient-to-br from-castor-slate to-castor-slatecard rounded-3xl p-6 sm:p-10 text-white shadow-2xl relative overflow-hidden">
+
+            <!-- BARRA DE PROGRESSO DAS ETAPAS (HEURÍSTICA #1) -->
+            <div class="mb-8">
+                <div class="flex justify-between items-center text-xs sm:text-sm font-semibold text-slate-300 mb-2">
+                    <span id="step1-label" class="text-castor-amber"><i class="fa-solid fa-circle-1 mr-1"></i> 1. Seleção de Serviços</span>
+                    <span id="step2-label" class="opacity-50"><i class="fa-solid fa-circle-2 mr-1"></i> 2. Detalhes & Data</span>
+                    <span id="step3-label" class="opacity-50"><i class="fa-solid fa-circle-3 mr-1"></i> 3. Dados de Contato</span>
+                </div>
+                <div class="w-full bg-slate-700 h-2.5 rounded-full overflow-hidden">
+                    <div id="step-progress-bar" class="bg-castor-amber h-full w-1/3 transition-all duration-300"></div>
+                </div>
+            </div>
+
+            <form id="multi-step-form" onsubmit="handleMultiStepSubmit(event)" class="space-y-6">
+
+                <!-- ETAPA 1: SELEÇÃO DE SERVIÇOS (CARDS INTERATIVOS COM CHECKBOXES) -->
+                <div id="form-step-1" class="space-y-4">
+                    <h3 class="text-lg font-bold text-amber-400 flex items-center gap-2">
+                        <i class="fa-solid fa-list-check" aria-hidden="true"></i> Escolha um ou mais serviços desejados:
+                    </h3>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-slate-800">
+
+                        <!-- ITEM 1 -->
+                        <label class="cursor-pointer bg-white p-4 rounded-xl border-2 border-slate-200 hover:border-castor-amber flex items-start gap-3 transition group">
+                            <input type="checkbox" name="servicos" value="Instalação de Suporte/Quadros" data-price="90" class="mt-1 w-5 h-5 text-castor-amber rounded focus:ring-castor-amber" onchange="updateEstimatedTotal()">
+                            <div>
+                                <span class="font-bold block text-sm group-hover:text-castor-gold">Suporte de TV / Quadros</span>
+                                <span class="text-xs text-slate-500">Estimativa: a partir de R$ 90</span>
+                            </div>
+                        </label>
+
+                        <!-- ITEM 2 -->
+                        <label class="cursor-pointer bg-white p-4 rounded-xl border-2 border-slate-200 hover:border-castor-amber flex items-start gap-3 transition group">
+                            <input id="chk-elet_chuveiro" type="checkbox" name="servicos" value="Troca de Chuveiro / Torneira Elétrica" data-price="120" class="mt-1 w-5 h-5 text-castor-amber rounded focus:ring-castor-amber" onchange="updateEstimatedTotal()">
+                            <div>
+                                <span class="font-bold block text-sm group-hover:text-castor-gold">Instalação de Chuveiro</span>
+                                <span class="text-xs text-slate-500">Estimativa: a partir de R$ 120</span>
+                            </div>
+                        </label>
+
+                        <!-- ITEM 3 -->
+                        <label class="cursor-pointer bg-white p-4 rounded-xl border-2 border-slate-200 hover:border-castor-amber flex items-start gap-3 transition group">
+                            <input id="chk-hidr_torneira" type="checkbox" name="servicos" value="Conserto de Torneira/Vazamento" data-price="110" class="mt-1 w-5 h-5 text-castor-amber rounded focus:ring-castor-amber" onchange="updateEstimatedTotal()">
+                            <div>
+                                <span class="font-bold block text-sm group-hover:text-castor-gold">Vazamento / Torneira</span>
+                                <span class="text-xs text-slate-500">Estimativa: a partir de R$ 110</span>
+                            </div>
+                        </label>
+
+                        <!-- ITEM 4 -->
+                        <label class="cursor-pointer bg-white p-4 rounded-xl border-2 border-slate-200 hover:border-castor-amber flex items-start gap-3 transition group">
+                            <input id="chk-gesso_divisoria" type="checkbox" name="servicos" value="Reparo ou Parede de Drywall" data-price="250" class="mt-1 w-5 h-5 text-castor-amber rounded focus:ring-castor-amber" onchange="updateEstimatedTotal()">
+                            <div>
+                                <span class="font-bold block text-sm group-hover:text-castor-gold">Drywall / Forro de Gesso</span>
+                                <span class="text-xs text-slate-500">Estimativa: a partir de R$ 250</span>
+                            </div>
+                        </label>
+
+                        <!-- ITEM 5 -->
+                        <label class="cursor-pointer bg-white p-4 rounded-xl border-2 border-slate-200 hover:border-castor-amber flex items-start gap-3 transition group">
+                            <input id="chk-ref_pintura" type="checkbox" name="servicos" value="Pintura Residencial" data-price="350" class="mt-1 w-5 h-5 text-castor-amber rounded focus:ring-castor-amber" onchange="updateEstimatedTotal()">
+                            <div>
+                                <span class="font-bold block text-sm group-hover:text-castor-gold">Pintura de Cômodo</span>
+                                <span class="text-xs text-slate-500">Estimativa: a partir de R$ 350</span>
+                            </div>
+                        </label>
+
+                        <!-- ITEM 6 -->
+                        <label class="cursor-pointer bg-white p-4 rounded-xl border-2 border-slate-200 hover:border-castor-amber flex items-start gap-3 transition group">
+                            <input type="checkbox" name="servicos" value="Troca de Tomadas / Luminárias" data-price="100" class="mt-1 w-5 h-5 text-castor-amber rounded focus:ring-castor-amber" onchange="updateEstimatedTotal()">
+                            <div>
+                                <span class="font-bold block text-sm group-hover:text-castor-gold">Tomadas / Lustres / LED</span>
+                                <span class="text-xs text-slate-500">Estimativa: a partir de R$ 100</span>
+                            </div>
+                        </label>
+
+                    </div>
+
+                    <div id="step1-error" class="text-rose-400 text-xs hidden font-semibold">
+                        <i class="fa-solid fa-triangle-exclamation mr-1"></i> Por favor, selecione ao menos 1 serviço para avançar.
+                    </div>
+
+                    <!-- RESUMO EM TEMPO REAL -->
+                    <div class="bg-slate-800 p-4 rounded-xl flex flex-col sm:flex-row justify-between items-center gap-4 mt-6 border border-slate-700">
+                        <div>
+                            <span class="text-xs text-slate-400 block uppercase font-bold">Valor Estimado do Pré-Orçamento:</span>
+                            <span id="estimated-total" class="text-2xl font-black text-castor-amber">R$ 0,00</span>
+                            <span class="text-[11px] text-slate-400 block">*Sujeito à avaliação técnica local</span>
+                        </div>
+                        <button type="button" onclick="goToStep(2)" class="w-full sm:w-auto bg-castor-amber hover:bg-castor-gold text-slate-900 font-extrabold px-6 py-3 rounded-xl transition flex items-center justify-center gap-2">
+                            Próxima Etapa <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- ETAPA 2: DETALHES E DATA PREFERENCIAL -->
+                <div id="form-step-2" class="space-y-4 hidden">
+                    <h3 class="text-lg font-bold text-amber-400 flex items-center gap-2">
+                        <i class="fa-solid fa-pen-to-square" aria-hidden="true"></i> Detalhe sua necessidade e prazo:
+                    </h3>
+
+                    <div>
+                        <label for="orcamento-detalhes" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">Descrição do Problema / Quantidades *</label>
+                        <textarea id="orcamento-detalhes" rows="3" placeholder="Ex: Preciso instalar 2 suportes de TV de 55' e trocar a torneira da cozinha que está vazando." class="w-full bg-white text-slate-800 rounded-xl p-3 text-sm focus:outline-none focus:ring-2 focus:ring-castor-amber"></textarea>
+                        <span id="detalhes-error" class="text-rose-400 text-xs hidden">Por favor, descreva brevemente o serviço.</span>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-4 text-slate-800">
+                        <div>
+                            <label for="orcamento-bairro" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1 text-white">Bairro / Cidade *</label>
+                            <input type="text" id="orcamento-bairro" placeholder="Ex: Pinheiros - São Paulo" class="w-full bg-white rounded-xl p-3 text-sm focus:outline-none focus:ring-2 focus:ring-castor-amber">
+                            <span id="bairro-error" class="text-rose-400 text-xs hidden">Informe o local para atendimento.</span>
+                        </div>
+                        <div>
+                            <label for="orcamento-data" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1 text-white">Data Preferencial</label>
+                            <input type="date" id="orcamento-data" class="w-full bg-white rounded-xl p-3 text-sm focus:outline-none focus:ring-2 focus:ring-castor-amber">
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center pt-4 border-t border-slate-700">
+                        <button type="button" onclick="goToStep(1)" class="text-slate-300 hover:text-white text-sm font-semibold flex items-center gap-1">
+                            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i> Voltar Etapa
+                        </button>
+                        <button type="button" onclick="goToStep(3)" class="bg-castor-amber hover:bg-castor-gold text-slate-900 font-extrabold px-6 py-3 rounded-xl transition flex items-center gap-2">
+                            Próxima Etapa <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- ETAPA 3: DADOS DE CONTATO E CONFIRMAÇÃO -->
+                <div id="form-step-3" class="space-y-4 hidden">
+                    <h3 class="text-lg font-bold text-amber-400 flex items-center gap-2">
+                        <i class="fa-solid fa-user-check" aria-hidden="true"></i> Seus dados para envio do orçamento:
+                    </h3>
+
+                    <div class="grid sm:grid-cols-2 gap-4 text-slate-800">
+                        <div>
+                            <label for="orcamento-nome" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1 text-white">Seu Nome Completo *</label>
+                            <input type="text" id="orcamento-nome" placeholder="Ex: Carlos Oliveira" class="w-full bg-white rounded-xl p-3 text-sm focus:outline-none focus:ring-2 focus:ring-castor-amber">
+                            <span id="nome-error" class="text-rose-400 text-xs hidden">Informe seu nome.</span>
+                        </div>
+                        <div>
+                            <label for="orcamento-phone" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1 text-white">WhatsApp / Telefone *</label>
+                            <input type="tel" id="orcamento-phone" oninput="applyPhoneMask(this)" placeholder="(11) 99999-9999" class="w-full bg-white rounded-xl p-3 text-sm focus:outline-none focus:ring-2 focus:ring-castor-amber">
+                            <span id="phone-error" class="text-rose-400 text-xs hidden">Informe um telefone válido.</span>
+                        </div>
+                    </div>
+
+                    <!-- RESUMO FINAL DO PEDIDO (HEURÍSTICA #6) -->
+                    <div class="bg-slate-800/90 p-4 rounded-xl border border-amber-500/30 text-xs text-slate-200 space-y-1">
+                        <p class="font-bold text-amber-400 text-sm">Resumo da Solicitação:</p>
+                        <p id="summary-services"><strong>Serviços:</strong> Nenhum selecionado</p>
+                        <p id="summary-total"><strong>Valor estimado:</strong> R$ 0,00</p>
+                    </div>
+
+                    <div class="flex justify-between items-center pt-4 border-t border-slate-700">
+                        <button type="button" onclick="goToStep(2)" class="text-slate-300 hover:text-white text-sm font-semibold flex items-center gap-1">
+                            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i> Voltar Etapa
+                        </button>
+                        <button type="submit" class="bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold px-8 py-3.5 rounded-xl shadow-lg transition flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-xl" aria-hidden="true"></i> Finalizar & Enviar via WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</section>
+
+<!-- PORTFÓLIO COM FILTROS DE FOTOS -->
+<section id="portfolio" class="py-16 lg:py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-10">
+            <div class="inline-block px-3 py-1 bg-amber-100 text-castor-darkbrown font-bold text-xs rounded-md uppercase tracking-wider">
+                Galeria de Obras
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-castor-slate mt-2">Nossos Trabalhos Recentes</h2>
+            <p class="text-slate-600">Projetos finalizados com qualidade e atenção a cada detalhe.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- ITEM 1 -->
+            <div class="group relative overflow-hidden rounded-2xl bg-slate-100 shadow-md">
+                <img src="https://castorreparos.com/wp-content/uploads/2021/02/image_editor_output_image1063363362-1614016073371.jpg" alt="Reforma Completa de Banheiro" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/78350F/FFF?text=Reforma+de+Banheiro'">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent p-6 flex flex-col justify-end">
+                    <span class="text-xs font-bold text-castor-amber uppercase">Instalação</span>
+                    <h4 class="text-lg font-bold text-white">Instalação cooktop</h4>
+                    <p class="text-xs text-slate-300"> Corte para coktop </p>
+                </div>
+            </div>
+
+            <!-- ITEM 2 -->
+            <div class="group relative overflow-hidden rounded-2xl bg-slate-100 shadow-md">
+                <img src="https://castorreparos.com/wp-content/uploads/2021/02/IMG-20210215-WA0024-1-scaled.jpeg" alt="Instalação Elétrica de Iluminação LED" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/78350F/FFF?text=Ilumina%C3%A7%C3%A3o+LED'">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent p-6 flex flex-col justify-end">
+                    <span class="text-xs font-bold text-castor-amber uppercase">Gesso & Instalação</span>
+                    <h4 class="text-lg font-bold text-white">Sanca de Gesso com coifa</h4>
+                    <p class="text-xs text-slate-300">Instalação de coifa de ilha .</p>
+                </div>
+            </div>
+
+            <!-- ITEM 3 -->
+            <div class="group relative overflow-hidden rounded-2xl bg-slate-100 shadow-md">
+                <img src="https://castorreparos.com/wp-content/uploads/2021/02/IMG-20210216-WA0032-576x1024.jpeg" alt="Pintura Residencial Interna" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/78350F/FFF?text=Pintura+Residencial'">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent p-6 flex flex-col justify-end">
+                    <span class="text-xs font-bold text-castor-amber uppercase">Reforma</span>
+                    <h4 class="text-lg font-bold text-white">Reparo Hidraulico</h4>
+                    <p class="text-xs text-slate-300">Cano furado sendo preparado para o reparo .</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section id="depoimentos" class="py-16 lg:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <div class="inline-block px-3 py-1 bg-amber-100 text-castor-darkbrown font-bold text-xs rounded-md uppercase tracking-wider">
+                Depoimentos
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-castor-slate mt-2">O que dizem nossos clientes</h2>
+            <p class="text-slate-600">A satisfação de quem já contratou a Castor Reparos.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- DEPOIMENTO 1 -->
+            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 flex flex-col justify-between">
+                <div>
+                    <div class="flex text-castor-amber mb-3 text-sm" aria-label="Avaliação 5 de 5 estrelas">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 italic text-sm leading-relaxed mb-6">
+                        "Instalaram 3 suportes de TV e várias luminárias. Chegaram pontualmente no horário marcado e usaram aspirador para não deixar poeira. Recomendo demais!"
+                    </p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-amber-200 text-castor-darkbrown font-bold flex items-center justify-center text-sm">
+                        MC
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm">Mariana Costa</h4>
+                        <span class="text-xs text-slate-400">Instalações Gerais</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DEPOIMENTO 2 -->
+            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 flex flex-col justify-between">
+                <div>
+                    <div class="flex text-castor-amber mb-3 text-sm" aria-label="Avaliação 5 de 5 estrelas">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 italic text-sm leading-relaxed mb-6">
+                        "Tinha um vazamento chato na cozinha que outros não achavam. O técnico da Castor resolveu no mesmo dia e com preço super justo!"
+                    </p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-amber-200 text-castor-darkbrown font-bold flex items-center justify-center text-sm">
+                        RS
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm">Roberto Silva</h4>
+                        <span class="text-xs text-slate-400">Reparo Hidráulico</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DEPOIMENTO 3 -->
+            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 flex flex-col justify-between">
+                <div>
+                    <div class="flex text-castor-amber mb-3 text-sm" aria-label="Avaliação 5 de 5 estrelas">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 italic text-sm leading-relaxed mb-6">
+                        "Fizeram o teto de drywall e a pintura da minha sala. Fiquei muito feliz com o acabamento impecável e o cumprimento do prazo."
+                    </p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-amber-200 text-castor-darkbrown font-bold flex items-center justify-center text-sm">
+                        AL
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm">Ana Lucia Lima</h4>
+                        <span class="text-xs text-slate-400">Gesso e Drywall</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SEÇÃO FAQ / AJUDA E DOCUMENTAÇÃO (HEURÍSTICA #10) -->
+<section id="faq" class="py-16 lg:py-24 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10">
+            <div class="inline-block px-3 py-1 bg-amber-100 text-castor-darkbrown font-bold text-xs rounded-md uppercase tracking-wider">
+                Dúvidas Frequentes
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-castor-slate mt-2">Perguntas Frequentes</h2>
+            <p class="text-slate-600 text-sm">Encontre respostas rápidas sobre nossos serviços e garantias.</p>
+        </div>
+
+        <div class="space-y-4">
+
+            <!-- FAQ 1 -->
+            <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+                <button onclick="toggleFaq(this)" class="w-full text-left p-4 font-bold text-slate-800 flex justify-between items-center hover:bg-amber-50/50 transition">
+                    <span>Como funciona a garantia dos serviços prestados?</span>
+                    <i class="fa-solid fa-chevron-down text-castor-amber transition-transform"></i>
+                </button>
+                <div class="faq-content hidden p-4 pt-0 text-slate-600 text-sm border-t border-slate-100">
+                    Todos os nossos serviços contam com garantia por escrito. O prazo varia conforme o tipo de reparo ou reforma (de 90 dias a 1 ano), cobrindo retoques e eventuais ajustes sem qualquer custo adicional.
+                </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+                <button onclick="toggleFaq(this)" class="w-full text-left p-4 font-bold text-slate-800 flex justify-between items-center hover:bg-amber-50/50 transition">
+                    <span>Quais são as formas de pagamento aceitas?</span>
+                    <i class="fa-solid fa-chevron-down text-castor-amber transition-transform"></i>
+                </button>
+                <div class="faq-content hidden p-4 pt-0 text-slate-600 text-sm border-t border-slate-100">
+                    Aceitamos PIX, cartões de crédito (com parcelamento em até 12x), débito e transferência bancária. Para reformas de maior porte, os pagamentos podem ser fracionados por etapas de entrega.
+                </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+                <button onclick="toggleFaq(this)" class="w-full text-left p-4 font-bold text-slate-800 flex justify-between items-center hover:bg-amber-50/50 transition">
+                    <span>O orçamento estimado no site é o valor final?</span>
+                    <i class="fa-solid fa-chevron-down text-castor-amber transition-transform"></i>
+                </button>
+                <div class="faq-content hidden p-4 pt-0 text-slate-600 text-sm border-t border-slate-100">
+                    A calculadora do site oferece um valor aproximado de partida. O orçamento final é confirmado após uma breve conversa ou visita técnica (quando necessário), garantindo total transparência e sem cobranças surpresa.
+                </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+                <button onclick="toggleFaq(this)" class="w-full text-left p-4 font-bold text-slate-800 flex justify-between items-center hover:bg-amber-50/50 transition">
+                    <span>Vocês fornecem os materiais necessários para a obra?</span>
+                    <i class="fa-solid fa-chevron-down text-castor-amber transition-transform"></i>
+                </button>
+                <div class="faq-content hidden p-4 pt-0 text-slate-600 text-sm border-t border-slate-100">
+                    Podemos trabalhar tanto com os materiais comprados pelo cliente quanto providenciar a compra do material necessário diretamente com nossos fornecedores parceiros, com nota fiscal e desconto.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ENDEREÇO, HORÁRIOS E CONTATO DIRETO -->
+<section id="contato" class="py-16 lg:py-24 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-12 gap-12">
+
+            <!-- INFORMAÇÕES DE ATENDIMENTO -->
+            <div class="lg:col-span-5 space-y-6">
+                <div>
+                    <div class="inline-block px-3 py-1 bg-amber-100 text-castor-darkbrown font-bold text-xs rounded-md uppercase tracking-wider mb-2">
+                        Contato e Atendimento
+                    </div>
+                    <h2 class="text-3xl font-heading font-extrabold text-castor-slate">Fale Conosco</h2>
+                    <p class="text-slate-600 text-sm">Estamos prontos para atender você com agilidade e cordialidade.</p>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-amber-100 text-castor-gold rounded-xl flex items-center justify-center text-lg shrink-0">
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-800 text-sm">Área de Atendimento</h4>
+                            <p class="text-xs text-slate-600 mt-0.5">Atendimento residencial e comercial em toda a região metropolitana.</p>
+                            <p class="text-xs text-slate-500">R. José Paulino, 472 - Bom Retiro, São Paulo - SP, 01120-000</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 border-t border-slate-200 pt-4">
+                        <div class="w-10 h-10 bg-amber-100 text-castor-gold rounded-xl flex items-center justify-center text-lg shrink-0">
+                            <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-800 text-sm">Horário de Funcionamento</h4>
+                            <p class="text-xs text-slate-600 mt-0.5">Segunda a Sexta: 07:00 às 21:00</p>
+                            <p class="text-xs text-slate-600">Sábados: 07:00 às 14:00</p>
+                            <p class="text-xs text-amber-700 font-semibold mt-1">Emergências com agendamento especial</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 border-t border-slate-200 pt-4">
+                        <div class="w-10 h-10 bg-amber-100 text-castor-gold rounded-xl flex items-center justify-center text-lg shrink-0">
+                            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-800 text-sm">Canais de Atendimento</h4>
+                            <p class="text-xs text-slate-600 mt-0.5">WhatsApp / Celular: (11) 94647-3125</p>
+                            <p class="text-xs text-slate-600">E-mail:
+                                edsonmvmg@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="https://wa.me/5511999999999" target="_blank" class="block w-full bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold p-4 rounded-2xl shadow-md text-center transition flex items-center justify-center gap-3">
+                    <i class="fa-brands fa-whatsapp text-2xl" aria-hidden="true"></i> Abrir WhatsApp Direto
+                </a>
+            </div>
+
+            <!-- FORMULÁRIO DE MENSAGEM RÁPIDA -->
+            <div class="lg:col-span-7 bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
+                <h3 class="text-xl font-bold text-slate-800 mb-1">Envie uma Mensagem</h3>
+                <p class="text-xs text-slate-500 mb-6">Ficou com alguma dúvida? Escreva para nós abaixo.</p>
+
+                <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-4">
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label for="contato-nome" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Seu Nome *</label>
+                            <input type="text" id="contato-nome" required placeholder="Seu nome completo" class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-castor-amber">
+                        </div>
+                        <div>
+                            <label for="contato-email" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Seu E-mail *</label>
+                            <input type="email" id="contato-email" required placeholder="seuemail@exemplo.com" class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-castor-amber">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="contato-assunto" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Assunto</label>
+                        <input type="text" id="contato-assunto" placeholder="Ex: Dúvida sobre atendimento no meu bairro" class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-castor-amber">
+                    </div>
+
+                    <div>
+                        <label for="contato-mensagem" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Mensagem *</label>
+                        <textarea id="contato-mensagem" required rows="4" placeholder="Escreva aqui detalhes do que você precisa..." class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-castor-amber"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-castor-slate hover:bg-slate-800 text-white font-bold py-3.5 rounded-xl transition shadow-md">
+                        Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-castor-slate text-slate-400 py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+
+            <div class="space-y-3 md:col-span-1">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 rounded-full bg-castor-amber flex items-center justify-center text-slate-900 font-bold">
+                        <i class="fa-solid fa-screwdriver-wrench text-xs" aria-hidden="true"></i>
+                    </div>
+                    <span class="font-heading font-extrabold text-white text-base tracking-tight uppercase">Castor Reparos</span>
+                </div>
+                <p class="text-xs leading-relaxed text-slate-400">
+                    Manutenções, pequenos reparos, rede elétrica, hidráulica, drywall e reformas residenciais com transparência e garantia.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-white text-xs font-bold uppercase tracking-wider mb-3">Navegação</h4>
+                <ul class="text-xs space-y-2">
+                    <li><a href="#inicio" class="hover:text-castor-amber transition">Página Inicial</a></li>
+                    <li><a href="#quem-somos" class="hover:text-castor-amber transition">Quem Somos</a></li>
+                    <li><a href="#servicos" class="hover:text-castor-amber transition">Serviços</a></li>
+                    <li><a href="#portfolio" class="hover:text-castor-amber transition">Portfólio</a></li>
+                    <li><a href="#faq" class="hover:text-castor-amber transition">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white text-xs font-bold uppercase tracking-wider mb-3">Especialidades</h4>
+                <ul class="text-xs space-y-2">
+                    <li><a href="#servicos" onclick="filterServices('gesso')" class="hover:text-castor-amber transition">Gesso e Drywall</a></li>
+                    <li><a href="#servicos" onclick="filterServices('instalacoes')" class="hover:text-castor-amber transition">Instalações Gerais</a></li>
+                    <li><a href="#servicos" onclick="filterServices('eletrica')" class="hover:text-castor-amber transition">Rede Elétrica</a></li>
+                    <li><a href="#servicos" onclick="filterServices('hidraulica')" class="hover:text-castor-amber transition">Rede Hidráulica</a></li>
+                    <li><a href="#servicos" onclick="filterServices('reformas')" class="hover:text-castor-amber transition">Reformas e Obras</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white text-xs font-bold uppercase tracking-wider mb-3">Atendimento</h4>
+                <p class="text-xs mb-1">Seg - Sáb: 07:00 - 21:00</p>
+                <p class="text-xs text-castor-amber font-bold mb-3">(11) 946447-3125</p>
+                <div class="flex space-x-3 text-lg">
+                    <a href="https://wa.me/55119464473125" target="_blank" class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-emerald-500 hover:text-white transition" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="border-t border-slate-800 pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+            <p>&copy; 2026 Castor Reparos e Manutenções Residenciais. Todos os direitos reservados.</p>
+            <p>Projetado com Foco em Usabilidade e Experiência do Usuário (UX/UI).</p>
+        </div>
+    </div>
+</footer>
+
+<!-- BOTÃO FLUTUANTE VOLTAR AO TOPO (HEURÍSTICA #3) -->
+<button id="back-to-top" onclick="scrollToTop()" class="fixed bottom-24 right-6 z-40 bg-slate-800 text-white w-10 h-10 rounded-full hidden items-center justify-center shadow-lg hover:bg-castor-amber hover:text-slate-900 transition-all duration-300" aria-label="Voltar ao topo da página">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+</button>
+
+<!-- BOTÃO FLUTUANTE WHATSAPP -->
+<a href="https://wa.me/5511999999999?text=Olá!%20Vim%20pelo%20site%20da%20Castor%20Reparos%20e%20gostaria%20de%20um%20orçamento." target="_blank" class="fixed bottom-6 right-6 z-50 bg-emerald-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:bg-emerald-400 hover:scale-110 transition-all duration-300 group" title="Falar no WhatsApp" aria-label="Falar no WhatsApp">
+    <i class="fa-brands fa-whatsapp text-3xl" aria-hidden="true"></i>
+    <span class="absolute right-16 bg-slate-900 text-white text-xs font-bold px-3 py-1.5 rounded-lg shadow-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+            Chamar no WhatsApp
+        </span>
+</a>
+
+<!-- TOAST MODAL DE NOTIFICAÇÃO (HEURÍSTICA #1 & #3) -->
+<div id="toast-modal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl p-6 sm:p-8 max-w-sm w-full text-center space-y-4 shadow-2xl border border-slate-100 relative">
+        <button onclick="closeToast()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 text-xl font-bold" aria-label="Fechar modal">&times;</button>
+        <div class="w-16 h-16 bg-amber-100 text-castor-gold rounded-full flex items-center justify-center text-3xl mx-auto">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+        </div>
+        <h3 id="toast-title" class="text-xl font-bold text-slate-800">Mensagem Enviada!</h3>
+        <p id="toast-message" class="text-xs text-slate-600 leading-relaxed">Sua solicitação foi registrada com sucesso.</p>
+        <button onclick="closeToast()" class="w-full bg-castor-amber hover:bg-castor-gold text-slate-900 font-bold py-3 rounded-xl transition">
+            Entendido
+        </button>
+    </div>
+</div>
+
+<!-- JAVASCRIPT DE USABILIDADE E INTERATIVIDADE -->
+<script>
+    // TOGGLE MENU MOBILE
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+    });
+
+    // HEURÍSTICA #1: SCROLLSPY E VOLTAR AO TOPO
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const backToTopBtn = document.getElementById('back-to-top');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+        const scrollY = window.pageYOffset;
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 120;
+            const sectionHeight = section.offsetHeight;
+            if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+
+        if (scrollY > 400) {
+            backToTopBtn.classList.remove('hidden');
+            backToTopBtn.classList.add('flex');
+        } else {
+            backToTopBtn.classList.add('hidden');
+            backToTopBtn.classList.remove('flex');
+        }
+    });
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // FECHAR MODAL COM ESC (HEURÍSTICA #3)
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            closeToast();
+        }
+    });
+
+    // FILTROS DE SERVIÇOS
+    function filterServices(category) {
+        const cards = document.querySelectorAll('.service-card');
+        const tabs = document.querySelectorAll('.service-tab');
+
+        tabs.forEach(tab => {
+            if (tab.getAttribute('data-category') === category) {
+                tab.classList.add('bg-castor-amber', 'text-slate-900', 'shadow-sm');
+                tab.classList.remove('bg-white', 'text-slate-600');
+            } else {
+                tab.classList.remove('bg-castor-amber', 'text-slate-900', 'shadow-sm');
+                tab.classList.add('bg-white', 'text-slate-600');
+            }
+        });
+
+        cards.forEach(card => {
+            if (category === 'all' || card.getAttribute('data-category') === category) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+
+    // PRÉ-SELECIONAR ITEM E ROLAR PARA O SIMULADOR
+    function preselectServiceAndScroll(checkboxId) {
+        const chk = document.getElementById(`chk-${checkboxId}`);
+        if (chk) {
+            chk.checked = true;
+            updateEstimatedTotal();
+        }
+        document.getElementById('orcamento').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // HEURÍSTICA #5: MÁSCARA AUTOMÁTICA DE TELEFONE
+    function applyPhoneMask(input) {
+        let value = input.value.replace(/\D/g, '');
+        if (value.length > 11) value = value.slice(0, 11);
+        if (value.length > 6) {
+            input.value = `(${value.slice(0, 2)}) ${value.slice(2, 7)}-${value.slice(7)}`;
+        } else if (value.length > 2) {
+            input.value = `(${value.slice(0, 2)}) ${value.slice(2)}`;
+        } else {
+            input.value = value;
+        }
+    }
+
+    // HEURÍSTICA #1 & #6: CÁLCULO E RESUMO DE ORÇAMENTO EM TEMPO REAL
+    let currentStep = 1;
+
+    function updateEstimatedTotal() {
+        const checkboxes = document.querySelectorAll('input[name="servicos"]:checked');
+        let total = 0;
+        const selectedNames = [];
+
+        checkboxes.forEach(chk => {
+            total += parseFloat(chk.getAttribute('data-price') || 0);
+            selectedNames.push(chk.value);
+        });
+
+        const formattedTotal = total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        document.getElementById('estimated-total').innerText = formattedTotal;
+        document.getElementById('summary-total').innerHTML = `<strong>Valor estimado:</strong> ${formattedTotal}`;
+
+        if (selectedNames.length > 0) {
+            document.getElementById('summary-services').innerHTML = `<strong>Serviços:</strong> ${selectedNames.join(', ')}`;
+            document.getElementById('step1-error').classList.add('hidden');
+        } else {
+            document.getElementById('summary-services').innerHTML = `<strong>Serviços:</strong> Nenhum selecionado`;
+        }
+    }
+
+    function goToStep(step) {
+        // VALIDAÇÃO DA ETAPA 1
+        if (step === 2 && currentStep === 1) {
+            const checkboxes = document.querySelectorAll('input[name="servicos"]:checked');
+            if (checkboxes.length === 0) {
+                document.getElementById('step1-error').classList.remove('hidden');
+                return;
+            }
+        }
+
+        // VALIDAÇÃO DA ETAPA 2
+        if (step === 3 && currentStep === 2) {
+            const detalhes = document.getElementById('orcamento-detalhes').value.trim();
+            const bairro = document.getElementById('orcamento-bairro').value.trim();
+            let valid = true;
+
+            if (!detalhes) {
+                document.getElementById('detalhes-error').classList.remove('hidden');
+                valid = false;
+            } else {
+                document.getElementById('detalhes-error').classList.add('hidden');
+            }
+
+            if (!bairro) {
+                document.getElementById('bairro-error').classList.remove('hidden');
+                valid = false;
+            } else {
+                document.getElementById('bairro-error').classList.add('hidden');
+            }
+
+            if (!valid) return;
+        }
+
+        // Oculta todas as etapas
+        document.getElementById('form-step-1').classList.add('hidden');
+        document.getElementById('form-step-2').classList.add('hidden');
+        document.getElementById('form-step-3').classList.add('hidden');
+
+        // Exibe etapa atual
+        document.getElementById(`form-step-${step}`).classList.remove('hidden');
+
+        // Atualiza indicadores visuais de progresso (Heurística #1)
+        const progressBar = document.getElementById('step-progress-bar');
+        const step1Label = document.getElementById('step1-label');
+        const step2Label = document.getElementById('step2-label');
+        const step3Label = document.getElementById('step3-label');
+
+        if (step === 1) {
+            progressBar.style.width = '33%';
+            step1Label.className = 'text-castor-amber font-bold';
+            step2Label.className = 'opacity-50';
+            step3Label.className = 'opacity-50';
+        } else if (step === 2) {
+            progressBar.style.width = '66%';
+            step1Label.className = 'text-emerald-400 font-bold';
+            step2Label.className = 'text-castor-amber font-bold';
+            step3Label.className = 'opacity-50';
+        } else if (step === 3) {
+            progressBar.style.width = '100%';
+            step1Label.className = 'text-emerald-400 font-bold';
+            step2Label.className = 'text-emerald-400 font-bold';
+            step3Label.className = 'text-castor-amber font-bold';
+        }
+
+        currentStep = step;
+    }
+
+    // SUBMISSÃO DO FORMULÁRIO MULTI-STEP VIA WHATSAPP
+    function handleMultiStepSubmit(e) {
+        e.preventDefault();
+
+        const nome = document.getElementById('orcamento-nome').value.trim();
+        const phone = document.getElementById('orcamento-phone').value.trim();
+
+        if (!nome) {
+            document.getElementById('nome-error').classList.remove('hidden');
+            return;
+        } else {
+            document.getElementById('nome-error').classList.add('hidden');
+        }
+
+        if (phone.length < 14) {
+            document.getElementById('phone-error').classList.remove('hidden');
+            return;
+        } else {
+            document.getElementById('phone-error').classList.add('hidden');
+        }
+
+        const checkboxes = document.querySelectorAll('input[name="servicos"]:checked');
+        const selectedServices = Array.from(checkboxes).map(c => c.value).join(', ');
+        const detalhes = document.getElementById('orcamento-detalhes').value;
+        const bairro = document.getElementById('orcamento-bairro').value;
+        const dataPref = document.getElementById('orcamento-data').value;
+        const total = document.getElementById('estimated-total').innerText;
+
+        const text = `Olá! Meu nome é *${nome}*.\n\n*Solicitação de Orçamento - Castor Reparos*\n- *Serviços:* ${selectedServices}\n- *Estimativa Inicial:* ${total}\n- *Detalhes:* ${detalhes}\n- *Local:* ${bairro}\n- *Data Preferencial:* ${dataPref || 'A combinar'}\n- *WhatsApp:* ${phone}`;
+
+        const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(text)}`;
+
+        showToast("Solicitação Pronta!", `Obrigado, ${nome}! Estamos redirecionando você para o WhatsApp oficial com o resumo da sua estimativa (${total}).`);
+
+        setTimeout(() => {
+            window.open(whatsappUrl, '_blank');
+        }, 1800);
+    }
+
+    // SUBMISSÃO DO FORMULÁRIO DE CONTATO
+    function handleContactSubmit(e) {
+        e.preventDefault();
+        const nome = document.getElementById('contato-nome').value;
+        showToast("Mensagem Enviada!", `Obrigado pelo contato, ${nome}! Responderemos sua mensagem em breve.`);
+        document.getElementById('contact-form').reset();
+    }
+
+    // FAQ ACCORDION (HEURÍSTICA #10)
+    function toggleFaq(btn) {
+        const content = btn.nextElementSibling;
+        const icon = btn.querySelector('i');
+
+        content.classList.toggle('hidden');
+        if (content.classList.contains('hidden')) {
+            icon.style.transform = 'rotate(0deg)';
+        } else {
+            icon.style.transform = 'rotate(180deg)';
+        }
+    }
+
+    // MODAL/TOAST FUNCTIONS
+    function showToast(title, message) {
+        document.getElementById('toast-title').innerText = title;
+        document.getElementById('toast-message').innerText = message;
+        document.getElementById('toast-modal').classList.remove('hidden');
+    }
+
+    function closeToast() {
+        document.getElementById('toast-modal').classList.add('hidden');
+    }
+</script>
+</body>
+</html>
